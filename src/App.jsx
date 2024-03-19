@@ -97,7 +97,6 @@ const App = () => {
     },
     muiTableContainerProps: { sx: { maxHeight: '600px', maxWidth: '95vw', margin: '20px', textAlign: 'center', overflow: 'hidden' } },
     muiTableBodyCellProps: {
-      //simple styling with the `sx` prop, works just like a style prop in this example
       sx: {
         textAlign: 'center'
       },
@@ -109,7 +108,6 @@ const App = () => {
     },
   });
 
-  // var element = document.querySelector('[aria-label="Show/Hide filters"]');
   const [clicked, setClicked] = useState(false);
 
   function filterhandler() {
@@ -126,7 +124,6 @@ const App = () => {
     setClicked(false)
     return;
   }
-  // element.
   return (
     <>
       <Stack direction={isMobile ? 'column-reverse' : 'row'} gap="1px">
