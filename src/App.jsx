@@ -15,7 +15,7 @@ import {
   Paper,
   useMediaQuery
 } from '@mui/material';
-// import moment from 'moment';
+import moment from 'moment';
 
 const App = () => {
   const isMobile = useMediaQuery('(max-width: 1000px)');
@@ -41,13 +41,13 @@ const App = () => {
       {
         header: 'created At',
         accessorKey: 'createdAt',
-        filterVariant: 'date-range',
-        // accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY'),
+        accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY'),
+        filterVariant: 'date-range'
       },
       {
         header: 'Updated At',
         accessorKey: 'updatedAt',
-        // accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
+        accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
         filterVariant: 'date-range'
       },
       {
@@ -55,12 +55,24 @@ const App = () => {
         accessorKey: 'price',
         filterVariant: 'range-slider',
         filterFn: 'betweenInclusive',
+        muiFilterSliderProps: {
+          marks: true,
+          max: 1000, 
+          min: 0, 
+          step: 10,
+        },
       },
       {
         header: 'Sale Price',
         accessorKey: 'sale_price',
         filterVariant: 'range-slider',
         filterFn: 'betweenInclusive',
+        muiFilterSliderProps: {
+          marks: true,
+          max: 1000,
+          min: 0,
+          step: 10,
+        },
       },
     ],
     [],
