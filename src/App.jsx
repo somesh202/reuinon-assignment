@@ -82,7 +82,7 @@ const App = () => {
   const table = useMaterialReactTable({
     columns,
     data,
-    columnFilterDisplayMode: 'custom', //we will render our own filtering UI
+    columnFilterDisplayMode: 'custom', 
     enableFacetedValues: true,
     renderToolbarInternalActions: ({ table }) => (
       <Box
