@@ -41,14 +41,12 @@ const Table = () => {
       {
         header: 'created At',
         accessorKey: 'createdAt',
-        accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY'),
-        filterVariant: 'date-range'
+        accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY')
       },
       {
         header: 'Updated At',
         accessorKey: 'updatedAt',
-        accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
-        filterVariant: 'date-range'
+        accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY')
       },
       {
         header: 'Price',
