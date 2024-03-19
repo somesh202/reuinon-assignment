@@ -7,10 +7,8 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
 
     <App />
-    </LocalizationProvider>
 
   </React.StrictMode>,
 )
