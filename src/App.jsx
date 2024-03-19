@@ -21,7 +21,6 @@ const App = () => {
   const isMobile = useMediaQuery('(max-width: 1000px)');
 
   const columns = useMemo(
-    //column definitions...
     () => [
       {
         header: 'id',
@@ -49,6 +48,7 @@ const App = () => {
         header: 'Updated At',
         accessorKey: 'updatedAt',
         accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
+        filterVariant: 'date-range'
       },
       {
         header: 'Price',
@@ -64,7 +64,6 @@ const App = () => {
       },
     ],
     [],
-    //end
   );
 
 
