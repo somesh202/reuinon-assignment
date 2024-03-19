@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import {
   MaterialReactTable,
-  MRT_TableContainer,
   MRT_ShowHideColumnsButton,
   MRT_ToggleFullScreenButton,
   MRT_TableHeadCellFilterContainer,
