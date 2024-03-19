@@ -67,8 +67,6 @@ const App = () => {
     //end
   );
 
-  //demo state
-  const [groupedColumnMode, setGroupedColumnMode] = useState('reorder'); //default is 'reorder
 
   const table = useMaterialReactTable({
     columns,
@@ -91,7 +89,6 @@ const App = () => {
       label: `Filter by ${column.columnDef.header}`,
     }),
     enableGrouping: true,
-    groupedColumnMode,
     positionGlobalFilter: 'right',
     initialState: {
       expanded: false,
