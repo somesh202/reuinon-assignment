@@ -15,7 +15,7 @@ import {
   Paper,
   useMediaQuery
 } from '@mui/material';
-import moment from 'moment';
+// import moment from 'moment';
 
 const App = () => {
   const isMobile = useMediaQuery('(max-width: 1000px)');
@@ -42,12 +42,12 @@ const App = () => {
         header: 'created At',
         accessorKey: 'createdAt',
         filterVariant: 'date-range',
-        accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY'),
+        // accessorFn: (item) => moment(item.createdAt).format('DD-MMM-YY'),
       },
       {
         header: 'Updated At',
         accessorKey: 'updatedAt',
-        accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
+        // accessorFn: (item) => moment(item.updatedAt).format('DD-MMM-YY'),
         filterVariant: 'date-range'
       },
       {
