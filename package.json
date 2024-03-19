@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
     "@tanstack/react-table": "^8.13.2",
     "material-react-table": "^2.12.1",
     "moment": "^2.30.1",
