@@ -74,7 +74,6 @@ const App = () => {
     columns,
     data,
     columnFilterDisplayMode: 'custom', 
-    enableFacetedValues: true,
     renderToolbarInternalActions: ({ table }) => (
       <Box
         sx={{
@@ -93,10 +92,10 @@ const App = () => {
     }),
     enableGrouping: true,
     groupedColumnMode,
-    positionGlobalFilter: 'left',
+    positionGlobalFilter: 'right',
     initialState: {
-      expanded: false, //expand all groups by default
-      grouping: [], //an array of columns to group by by default (can be multiple)
+      expanded: false,
+      grouping: [],
       pagination: { pageIndex: 0, pageSize: 10 },
       showGlobalFilter: true
     },
@@ -110,8 +109,8 @@ const App = () => {
     muiTableHeadCellProps: {
       sx: {
         justifyContent: 'center'
-      }
-    }
+      },
+    },
   });
 
   // var element = document.querySelector('[aria-label="Show/Hide filters"]');
@@ -155,7 +154,3 @@ const App = () => {
 };
 
 export default App;
-
-//demo...
-
-//end
