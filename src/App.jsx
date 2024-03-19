@@ -131,12 +131,14 @@ const App = () => {
     document.getElementById('close').style.display = 'block'
 
     setClicked(true);
+    return;
   }
   function handleClose() {
     document.getElementById('close').style.display = 'none'
     document.getElementById('filterBox').style.display = 'none'
 
     setClicked(false)
+    return;
   }
   // element.
   return (
